@@ -24,33 +24,36 @@ namespace Utils
             return Math.Atan(X);//вычисляет arctang(x);
         }
 
-        public double SumSequence(int n, double e, out int c) //SumSequence - сумма последовательности
+        public double SumSequence(double e) //SumSequence - сумма последовательности
         {
-            c = 0;
-
-            double sum = X;
+            int i = 0;
+            double sum = 0;
             double currentTerm = X; //currentTerm - текущее слагаемое
 
-            if (currentTerm > e)
+            while (Math.Abs(currentTerm) > e)
             {
-                c = 1;
-            for (int i = 1; i < n; i++)
-            {
+                sum += currentTerm;
+                i++;
                 currentTerm *= (-1) * X * X * ((double)(2 * i + 1) / (2 * i + 3));
+            }
 
-                if (currentTerm > e)
-                {
-                    sum += currentTerm;
-                    c++;
-                }
-                               
-            }
             return sum;
-            }
-            else
+        }
+
+        public double CalcCountElem(double e) //CalcCountElem - счёт кол-ва элементов 
+        {
+            int i = 0;
+            int count = 0;
+            double currentTerm = X; //currentTerm - текущее слагаемое
+
+            while (Math.Abs(currentTerm) > e)
             {
-                return sum = 0;
+                count++;
+                i++;
+                currentTerm *= (-1) * X * X * ((double)(2 * i + 1) / (2 * i + 3));
             }
+
+            return count;
         }
     }
 }

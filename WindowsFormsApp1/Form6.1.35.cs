@@ -26,9 +26,7 @@ namespace _6._1._35
             try
             {
                 double x = double.Parse(ValueX.Text);
-                int n = int.Parse(ValueN.Text);
                 double e = double.Parse(ValueE.Text);
-
 
                 CalcSequence calc = new CalcSequence(x);
 
@@ -37,14 +35,14 @@ namespace _6._1._35
 
                 answer += "Точная сумма: " + calc.CalcValue() + Environment.NewLine;
 
-                answer += "Сумма N слагаемых: " + calc.SumSequence(n, 0, out c) + ", " +
-                "Из них больше E: " + c + " штук" + Environment.NewLine;
+                /*answer += "Сумма N слагаемых: " + calc.SumSequence(n, 0, out c) + ", " +
+                "Из них больше E: " + c + " штук" + Environment.NewLine;*/
 
-                answer += "Сумма N слагаемых, больших E: " + calc.SumSequence(n, e, out c) + ", " +
-                "Из них больше E: " + c + " штук" + Environment.NewLine;
+                answer += "Сумма слагаемых, больших E: " + calc.SumSequence(e) + ", " +
+                "Их кол-во: " + calc.CalcCountElem(e) + " шт" + Environment.NewLine;
 
-                answer += "Сумма N слагаемых, больших E/10: " + calc.SumSequence(n, e, out c) + ", " +
-                "Из них больше E/10: " + c + " штук" + Environment.NewLine;
+                answer += "Сумма слагаемых, больших E/10: " + calc.SumSequence(e) + ", " +
+                "Из них больше E/10: " + calc.CalcCountElem(e/10)+ " шт" + Environment.NewLine;
 
                 Conclusion.Text = answer;
             }

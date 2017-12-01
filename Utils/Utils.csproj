@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ArrayUtils.cs" />
     <Compile Include="CalcSquence.cs" />
+    <Compile Include="InvertArray.cs" />
     <Compile Include="IOUtils.cs" />
     <Compile Include="ListUtils.cs" />
     <Compile Include="StringUtility.cs" />

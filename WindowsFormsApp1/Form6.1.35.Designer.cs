@@ -31,9 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Conclusion = new System.Windows.Forms.Label();
             this.ValueE = new System.Windows.Forms.TextBox();
-            this.ValueN = new System.Windows.Forms.TextBox();
             this.NameE = new System.Windows.Forms.Label();
-            this.NameN = new System.Windows.Forms.Label();
             this.ValueX = new System.Windows.Forms.TextBox();
             this.NameX = new System.Windows.Forms.Label();
             this.CulcConclution = new System.Windows.Forms.Button();
@@ -45,9 +43,7 @@
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.Conclusion);
             this.groupBox1.Controls.Add(this.ValueE);
-            this.groupBox1.Controls.Add(this.ValueN);
             this.groupBox1.Controls.Add(this.NameE);
-            this.groupBox1.Controls.Add(this.NameN);
             this.groupBox1.Controls.Add(this.ValueX);
             this.groupBox1.Controls.Add(this.NameX);
             this.groupBox1.Controls.Add(this.CulcConclution);
@@ -73,13 +69,6 @@
             this.ValueE.Size = new System.Drawing.Size(100, 20);
             this.ValueE.TabIndex = 8;
             // 
-            // ValueN
-            // 
-            this.ValueN.Location = new System.Drawing.Point(154, 59);
-            this.ValueN.Name = "ValueN";
-            this.ValueN.Size = new System.Drawing.Size(100, 20);
-            this.ValueN.TabIndex = 7;
-            // 
             // NameE
             // 
             this.NameE.AutoSize = true;
@@ -90,17 +79,6 @@
             this.NameE.Size = new System.Drawing.Size(93, 20);
             this.NameE.TabIndex = 6;
             this.NameE.Text = "Введите е:";
-            // 
-            // NameN
-            // 
-            this.NameN.AutoSize = true;
-            this.NameN.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.NameN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameN.Location = new System.Drawing.Point(9, 59);
-            this.NameN.Name = "NameN";
-            this.NameN.Size = new System.Drawing.Size(93, 20);
-            this.NameN.TabIndex = 5;
-            this.NameN.Text = "Введите n:";
             // 
             // ValueX
             // 
@@ -156,9 +134,7 @@
         private System.Windows.Forms.Label NameX;
         private System.Windows.Forms.Button CulcConclution;
         private System.Windows.Forms.TextBox ValueE;
-        private System.Windows.Forms.TextBox ValueN;
         private System.Windows.Forms.Label NameE;
-        private System.Windows.Forms.Label NameN;
         private System.Windows.Forms.Label Conclusion;
     }
 }
